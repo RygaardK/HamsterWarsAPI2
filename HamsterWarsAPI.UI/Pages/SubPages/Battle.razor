@@ -1,0 +1,42 @@
+﻿@inject IRequestService _irs
+@using HamsterWarsAPI.UI.Components
+@using SharedHelpers.DataTransferObjects
+
+@page "/battle"
+
+
+@if (hamsters is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container">
+
+        <h3 class="text-center">Choose the cutest Hamster</h3>
+        <div class="d-inline-flex">
+            <CompetitorCard competitor="Competitor1" opponent="Competitor2" />
+            <h1 class="text-center" style="padding-top:20%;">VS</h1> 
+            <CompetitorCard competitor="Competitor2" opponent="Competitor1" />
+        </div>
+    </div>
+}
+
+@code
+{
+    private IEnumerable<Hamster>? hamsters;
+    private Hamster? Competitor1;
+    private Hamster? Competitor2;
+    private Match Result = new Match();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (hamsters is null)
+        {
+            hamsters = await _irs.GetAllHamstersAsync();
+        }
+        Competitor1 = await _irs.GetRandomHamsterAsync(); 
+        Competitor2 = await _irs.GetRandomHamsterAsync();
+    }
+
+}

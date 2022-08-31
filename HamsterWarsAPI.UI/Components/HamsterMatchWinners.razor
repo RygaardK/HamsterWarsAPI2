@@ -1,0 +1,85 @@
+﻿@inject IRequestService _irs
+@inject NavigationManager _nav
+@page "/matchwinners/{id:int}"
+@using SharedHelpers.DataTransferObjects
+
+<button class="btn btn-primary" @onclick="goBack" style="margin:1rem;">Back</button>
+@if (allResults is null && hamster is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <HamsterCard hamster="hamster" />
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">GameID</th>
+                <th scope="col">Winner</th>
+                <th scope="col">Looser</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (MatchHistoryDto result in allResults)
+            {
+                if (result.Winner.Id == hamster.Id || result.Loser.Id == hamster.Id)
+                {
+                    <tr>
+                        <th>@result.Id</th>
+                        <td scope="row">
+                            @if (result.Winner.Name == "Unknown")
+                            {
+                                <p style="color:red">@result.Winner.Id</p>
+                            }
+                            else
+                            {
+                                @result.Winner.Name;
+                            }
+                        </td>
+                        <td>
+                            @if (result.Loser.Name == "Unknown")
+                            {
+                                <p style="color:red">@result.Loser.Id</p>
+                            }
+                            else
+                            {
+                                @result.Loser.Name;
+                            }
+                        </td>
+                        <td>@result.Timestamp</td>
+                    </tr>
+                }
+            }
+            @if(hamster.Games == 0)
+                {
+                    <tr>
+                        <td colspan="4"><p class="text-center">No Games Played!</p></td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+}
+@code {
+    [Parameter]
+    public int id { get; set; }
+    Hamster hamster { get; set; }
+
+    private Hamster setHamster()
+    {
+        return allHamsters.Where(s => s.Id == id).Single();
+    }
+    private IEnumerable<MatchHistoryDto>? allResults;
+    private IEnumerable<Hamster>? allHamsters;
+    protected override async Task OnInitializedAsync()
+    {
+        allHamsters = await _irs.GetAllHamstersAsync();
+        allResults = await _irs.GetAllMatchesAsync();
+        hamster = setHamster();
+    }
+    private void goBack()
+    {
+          _nav.NavigateTo("gallery", forceLoad: true);
+    
+    }
+}

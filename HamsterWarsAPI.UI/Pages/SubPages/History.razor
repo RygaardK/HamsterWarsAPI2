@@ -1,0 +1,80 @@
+﻿@inject NavigationManager _nav
+@inject IRequestService _irs
+@inject IMapper _mapper
+
+
+@page "/history"
+@using AutoMapper
+@using SharedHelpers.DataTransferObjects
+
+<h3 class="text-center">History</h3>
+
+@if (allResults is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table" style="margin-bottom:0px; padding-bottom:0px;">
+        <thead>
+            <tr>
+                <th scope="col">Nr</th>
+                <th scope="col">Winner</th>
+                <th scope="col">Looser</th>
+                <th scope="col">Date</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (MatchHistoryDto result in allResults)
+            {
+                <tr>
+                    <td>@(index++)</td>
+                    <th scope="row">
+                        @if (@result.Winner.Name == "Unknown")
+                        {
+                            <p style="color:red">@result.Winner.Id</p>
+                        }
+                        else
+                        {
+                            @result.Winner.Name
+                        }
+                    </th>
+                    <td>
+                        @if (@result.Loser.Name == "Unknown")
+                        {
+                            <p style="color:red">@result.Loser.Id</p>
+                        }
+                        else
+                        {
+                            @result.Loser.Name
+                        }
+                    </td>
+                    <td>@result.Timestamp</td>
+
+                    <td><button @onclick="(() => RemoveObjAsync(result))" class="btn btn-sm btn-outline-danger">X</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code
+{
+    private IEnumerable<MatchHistoryDto>? allResults;
+    private IEnumerable<Hamster>? allHamsters;
+    private int index = 0; //Indexer for Foreach
+
+    protected override async Task OnInitializedAsync()
+    {
+        allHamsters = await _irs.GetAllHamstersAsync();
+        allResults = await _irs.GetAllMatchesAsync();
+    }
+
+    public async Task RemoveObjAsync(MatchHistoryDto matchHistoryDto)
+    {
+        var match = _mapper.Map<IEnumerable<MatchHistoryDto>>(matchHistoryDto);
+        await _irs.RemoveObjectAsync<Match>("match", matchHistoryDto.Id);
+        _nav.NavigateTo(_nav.Uri, forceLoad: true);
+    }
+}

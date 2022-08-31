@@ -1,0 +1,38 @@
+﻿@using SharedHelpers.DataTransferObjects
+@inject IRequestService _irs
+
+
+
+<div class="card" style="width:80%;">
+    <img class="card-img-top" style="height:450px; width:600px;" src="/media/img/@competitor.ImgName">
+    <div class="card-body">
+    <h5 class="card-title">@competitor.Name</h5>
+    <p class="card-text">Age: @competitor.Age</p>
+    <p class="card-text">Favorite food: @competitor.FavFood</p>
+    <p class="card-text">Favorite activity: @competitor.Loves</p>
+    <button type="button" @onclick="(() => Voted(competitor, opponent))" class="btn btn-primary">Like</button>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Hamster? competitor { get; set; }
+    [Parameter]
+    public Hamster? opponent { get; set; }
+
+[Parameter]
+    public EventCallback<bool> battleDone{ get; set; }
+    [Parameter]
+    public EventCallback<Hamster> HamsterWinner{ get; set; }
+
+    public async Task Voted(Hamster Winner, Hamster Loser)
+    {
+        await _irs.VotedHamsterAsync(Winner.Id, Winner, "winner");
+        await _irs.VotedHamsterAsync(Loser.Id, Loser, "loser");
+        await _irs.CreateMatchAsync(Winner.Id, Loser.Id);
+
+       
+        await battleDone.InvokeAsync();
+        await HamsterWinner.InvokeAsync(Winner);
+    }}
+}

@@ -1,0 +1,33 @@
+﻿@page "/gallery"
+@inject IRequestService _irs
+@using HamsterWarsAPI.UI.Components
+@using SharedHelpers.DataTransferObjects
+
+<AddHamster />
+<h3>Hamster Gallery</h3>
+
+@if (hamsters is null)
+{
+    <p><em class="loadingTxt">Loading...</em></p>
+}
+else
+{
+    <div class="container gap-3">
+        @foreach (Hamster hamster in hamsters)
+        {
+            <div class="d-inline-flex p-2">
+
+                <HamsterCard hamster="hamster" />
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private IEnumerable<Hamster>? hamsters;
+
+    protected override async Task OnInitializedAsync()
+    {
+        hamsters = await _irs.GetAllHamstersAsync();
+    }
+}

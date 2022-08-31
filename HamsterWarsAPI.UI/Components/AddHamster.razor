@@ -1,0 +1,49 @@
+﻿@inject IRequestService _irs
+
+<EditForm Model="@hamster" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="d-inline-flex gap-3 bg-light border" style="width:100%">
+        <div class="p-2 align-self-center">
+            <label>
+                <InputText @bind-Value="hamster.Name" /><br />
+                Name
+            </label>
+        </div>
+        <div class="p-2 align-self-center">
+            <label>
+                <InputNumber @bind-Value="hamster.Age" /><br />
+                Age
+            </label>
+        </div>
+        <div class="p-2 align-self-center">
+            <label>
+                <InputText @bind-Value="hamster.FavFood" /><br />
+                Favorite Food
+            </label>
+        </div>
+        <div class="p-2 align-self-center">
+            <label>
+                <InputText @bind-Value="hamster.Loves" /><br />
+                Love Activity
+            </label>
+        </div>
+        <div class="p-2 align-self-center ">
+            <label>
+                <InputFile @bind-Value="hamster.ImgName" />
+            </label>
+        </div>
+        <button class="btn btn-primary align-self-center" type="submit" ><span class="oi oi-plus"/></button>
+        
+
+    </div>
+</EditForm>
+
+@code {
+    private Hamster hamster = new();
+
+    private void HandleValidSubmit()
+    {
+        _irs.CreateHamster(hamster);
+    }
+}

@@ -1,0 +1,17 @@
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\bin\Debug\net6.0\Service.Contracts.deps.json
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\bin\Debug\net6.0\Service.Contracts.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\bin\Debug\net6.0\Service.Contracts.pdb
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\Service.Contracts.csproj.AssemblyReference.cache
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\Service.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\Service.Contracts.AssemblyInfoInputs.cache
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\Service.Contracts.AssemblyInfo.cs
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\Service.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\Service.Contracts.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\refint\Service.Contracts.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\Service.Contracts.pdb
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\ref\Service.Contracts.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\obj\Debug\net6.0\Service.Contracts.csproj.CopyComplete
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\bin\Debug\net6.0\SharedHelpers.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\bin\Debug\net6.0\SharedHelpers.pdb
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\bin\Debug\net6.0\Entities.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Service.Contracts\bin\Debug\net6.0\Entities.pdb

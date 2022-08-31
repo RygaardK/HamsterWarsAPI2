@@ -1,0 +1,15 @@
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\bin\Debug\net6.0\SharedHelpers.deps.json
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\bin\Debug\net6.0\SharedHelpers.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\bin\Debug\net6.0\SharedHelpers.pdb
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\SharedHelpers.csproj.AssemblyReference.cache
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\SharedHelpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\SharedHelpers.AssemblyInfoInputs.cache
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\SharedHelpers.AssemblyInfo.cs
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\SharedHelpers.csproj.CoreCompileInputs.cache
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\SharedHelpers.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\refint\SharedHelpers.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\SharedHelpers.pdb
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\ref\SharedHelpers.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\bin\Debug\net6.0\Entities.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\bin\Debug\net6.0\Entities.pdb
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\SharedHelpers\obj\Debug\net6.0\SharedHelpers.csproj.CopyComplete

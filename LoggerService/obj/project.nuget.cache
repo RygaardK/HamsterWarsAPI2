@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "dA6JSXBb2/k5bHjqPOB4OXAiPtPUCTbMQknmrncDJw0+Fr30kMXC/nCT4wEnE8aGrkK2UIlq97qgdVZn7uf2LA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\LoggerService\\LoggerService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\nlog\\5.0.2\\nlog.5.0.2.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\nlog.extensions.logging\\5.0.2\\nlog.extensions.logging.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

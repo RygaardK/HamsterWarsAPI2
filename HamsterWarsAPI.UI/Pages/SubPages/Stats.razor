@@ -1,0 +1,92 @@
+﻿@inject IRequestService _irs
+
+
+@page "/stats"
+@using SharedHelpers.DataTransferObjects
+
+<h3 class="text-center">TOP @topPickQuantity PLAYERS!</h3>
+
+@if (allHamsters is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <select @bind="CheckSelected" style="padding:1rem;">
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+        <option value="10">10</option>
+    </select>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4 class="text-center">Top @topPickQuantity Winners</h4>
+                <ResultTable hamsters="topWins" staticsType="Wins" />
+            </div>
+            <div class="col">
+                <h4 class="text-center">Top @topPickQuantity Loosers</h4>
+                <ResultTable hamsters="topLosses" staticsType="Losses" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">   
+                <h4 class="text-center">Top @topPickQuantity Gamers!</h4>
+                <ResultTable hamsters="topGames" staticsType="Games" />
+            </div>
+        </div>
+    </div>
+}
+
+@code
+{
+
+    private IEnumerable<Hamster>? allHamsters;
+    private List<Hamster>? topWins;
+    private List<Hamster>? topLosses;
+    private List<Hamster>? topGames;
+    protected override async Task OnInitializedAsync()
+    {
+        allHamsters = await _irs.GetAllHamstersAsync();
+        GetStats(topPickQuantity);
+    }
+
+    public void GetStats(string topX)  //Generic select top from hamsters
+    {
+        int topNum = Int32.Parse(topX);
+        
+        topWins = allHamsters.OrderByDescending(h => h.Wins >= 1).Take(topNum).ToList();
+        
+        topLosses = allHamsters.OrderByDescending(h => h.Defeats >= 1).Take(topNum).ToList();
+        
+        topGames = allHamsters.OrderByDescending(h => h.Games >= 1).Take(topNum).ToList();
+
+    }
+
+    // SETTINGS
+    // TOP pick (INT), Order By (String)
+    private string topPickQuantity { get; set; } = "5";
+
+    private string CheckSelected
+    {
+        get
+        {
+            return topPickQuantity;
+        }
+        set
+        {
+            ChangeEventArgs selectedEventArgs = new ChangeEventArgs();
+            selectedEventArgs.Value = value;
+            OnChangeSelected(selectedEventArgs);
+        }
+    }
+
+    private void OnChangeSelected(ChangeEventArgs e)
+    {
+        if (e.Value.ToString() != string.Empty)
+        {
+            topPickQuantity = e.Value.ToString();
+            GetStats(topPickQuantity);
+        }
+    }
+}

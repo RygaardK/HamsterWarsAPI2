@@ -1,0 +1,43 @@
+﻿@inject IRequestService _irs
+@inject NavigationManager _nav
+
+<div class="card" style="width: 18rem;">
+    <div class="card-header d-inline-flex">
+        <p class="fw-bold" style="width:80%;">@hamster.Name</p><p style="width:20%;" class="fw-light text-end">@hamster.Age</p>
+            <span @onclick="(() => RemoveHamster(hamster))" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="cursor:pointer">
+                X
+                <span class="visually-hidden">Delete Hamster</span>
+            </span>
+    </div>
+    <a href="/matchwinners/@hamster.Id"><img src="/media/img/@hamster.ImgName" class="card-img-top" style="width:280px; height:190px;"></a>
+    <div class="card-body">
+        <p class="card-text">Loves: @hamster.Loves</p>
+        <p class="card-text">Favorite Food: @hamster.FavFood</p>
+        <div class="rounded-top text-white" style="padding:0.4em; background-color:#d63384;">
+            <h5 class="card-title">Games: @hamster.Games</h5>
+            <hr style="color:white" />
+            <div>
+                <p>Wins: @hamster.Wins</p>
+                <p>Losses: @hamster.Defeats</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+     public Hamster hamster { get; set; }
+     public bool DeleteDialogOpen { get; set; } = false;
+
+    public async Task RemoveHamster(Hamster hamster)
+    {
+        DeleteDialogOpen = true;
+        await _irs.RemoveObjectAsync<Hamster>("hamster", hamster.Id);
+    }
+    private void OnDeleteDialogClose(bool accepted)
+    {
+        DeleteDialogOpen = false;
+        _nav.NavigateTo(_nav.Uri, forceLoad: true);
+    }
+
+}

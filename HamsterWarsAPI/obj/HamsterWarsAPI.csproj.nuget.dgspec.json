@@ -1,0 +1,589 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWarsAPI\\HamsterWarsAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWars.Presentation\\HamsterWars.Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWars.Presentation\\HamsterWars.Presentation.csproj",
+        "projectName": "HamsterWars.Presentation",
+        "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWars.Presentation\\HamsterWars.Presentation.csproj",
+        "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWars.Presentation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\Service.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWarsAPI\\HamsterWarsAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWarsAPI\\HamsterWarsAPI.csproj",
+        "projectName": "HamsterWarsAPI",
+        "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWarsAPI\\HamsterWarsAPI.csproj",
+        "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWarsAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWars.Presentation\\HamsterWars.Presentation.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\HamsterWars.Presentation\\HamsterWars.Presentation.csproj"
+              },
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\LoggerService\\LoggerService.csproj"
+              },
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Repository\\Repository.csproj"
+              },
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\Service.Contracts.csproj"
+              },
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service\\Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\LoggerService\\LoggerService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\LoggerService\\LoggerService.csproj",
+        "projectName": "LoggerService",
+        "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\LoggerService\\LoggerService.csproj",
+        "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\LoggerService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\Service.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\Service.Contracts.csproj",
+        "projectName": "Service.Contracts",
+        "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\Service.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\SharedHelpers.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\SharedHelpers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Service.Contracts\\Service.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\SharedHelpers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\SharedHelpers.csproj",
+        "projectName": "SharedHelpers",
+        "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\SharedHelpers.csproj",
+        "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
