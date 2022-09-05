@@ -58,8 +58,8 @@ namespace Service
 
         public async Task UpdateHamsterAsync(int id, HamsterForUpdateDto hamsterForUpdateDto, bool trackChanges)
         {
-            await HamsterCheckIfItExists(hamsterForUpdateDto.Id, trackChanges);
-            var hamster = await _repository.Hamster.GetHamsterByIdAsync(hamsterForUpdateDto.Id, trackChanges);
+            await HamsterCheckIfItExists(id, trackChanges);
+            var hamster = await _repository.Hamster.GetHamsterByIdAsync(id, trackChanges);
             _mapper.Map(hamsterForUpdateDto, hamster);
             await _repository.SaveAsync();
         }
