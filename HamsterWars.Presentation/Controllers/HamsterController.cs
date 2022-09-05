@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HamsterWarsAPI.Presentation;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Service.Contracts;
 using SharedHelpers.DataTransferObjects;
@@ -25,14 +26,14 @@ namespace HamsterWars.Presentation.Controllers
             return Ok(hamster);
         }
         [HttpPost]
-        [ServiceFilter(typeof(ActionFilterAttribute))]
+        [ServiceFilter(typeof(AsyncActionFilter))]
         public async Task<IActionResult> CreateHamsterAsync([FromBody] HamsterForCreationDto hamster)
         {
             var createdHamster = await _service.HamsterService.CreateHamsterAsync(hamster);
             return CreatedAtRoute("HamsterById", new { id = createdHamster.Id }, createdHamster);
         }
 
-        [HttpDelete("{id:int}")]
+        [HttpDelete("delete/{id:int}")]
         public async Task<IActionResult> DeleteHamsterAsync(int id)
         {
             await _service.HamsterService.DeleteHamsterAsync(id, trackChanges: false);
@@ -40,6 +41,7 @@ namespace HamsterWars.Presentation.Controllers
         }
 
         [HttpPut("update/{id:int}")]
+        //[ServiceFilter(typeof(AsyncActionFilter))] - kolla update först innan expr.
         public async Task<IActionResult> UpdateHamster(int id, [FromBody] HamsterForUpdateDto hamster, bool trackChanges)
         {
             await _service.HamsterService.UpdateHamsterAsync(id, hamster, trackChanges: true);

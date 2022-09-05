@@ -85,10 +85,11 @@ namespace HamsterWarsAPI.UI.Service
             return respons!;
         }
 
+
         public async Task CreateMatchAsync(int winnerId, int loserId)
         {
             var newMatches = new Match { WinnerId = winnerId, LoserId = loserId, Timestamp = DateTime.Now };
-            await _httpClient.PostAsJsonAsync($"match", newMatches);
+            await _httpClient.PostAsJsonAsync($"matches", newMatches);
         }
     }
 }

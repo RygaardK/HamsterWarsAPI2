@@ -1557,7 +1557,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "SharedHelpers": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Contracts.dll": {}
@@ -1610,7 +1611,8 @@
         "dependencies": {
           "Contracts": "1.0.0",
           "Entities": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "6.0.8"
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "SharedHelpers": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}

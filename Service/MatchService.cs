@@ -33,6 +33,12 @@ namespace Service
             var matchDto = _mapper.Map<IEnumerable<MatchDto>>(match);
             return matchDto;
         }
+        public async Task<IEnumerable<MatchHistoryDto>> GetMatchHistoryAsync(bool trackChanges)
+        {
+            var match = await _repository.Matches.GetMatchHistoryAsync(trackChanges);
+            var matchHistoryDto = _mapper.Map<IEnumerable<MatchHistoryDto>>(match);
+            return matchHistoryDto;
+        }
 
         public async Task<MatchDto> GetMatchByIdAsync(int id, bool trackChanges)
         {

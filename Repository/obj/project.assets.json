@@ -261,7 +261,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "SharedHelpers": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Contracts.dll": {}
@@ -278,6 +279,19 @@
         },
         "runtime": {
           "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "SharedHelpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SharedHelpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedHelpers.dll": {}
         }
       }
     }
@@ -704,6 +718,11 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "SharedHelpers/1.0.0": {
+      "type": "project",
+      "path": "../SharedHelpers/SharedHelpers.csproj",
+      "msbuildProject": "../SharedHelpers/SharedHelpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -711,7 +730,8 @@
       "Contracts >= 1.0.0",
       "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.8",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.8"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.8",
+      "SharedHelpers >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -746,6 +766,9 @@
             },
             "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\SharedHelpers.csproj": {
+              "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\SharedHelpers.csproj"
             }
           }
         }

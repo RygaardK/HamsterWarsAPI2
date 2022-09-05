@@ -1,4 +1,5 @@
-﻿@inject IRequestService _irs
+﻿@using SharedHelpers.DataTransferObjects
+@inject IRequestService _irs
 <!-- Skall ta emot en lista på Top 5 av: Wins, Losses and Games så det blir 3 varianter -->
 <table class="table table-hover">
     <thead>
@@ -15,7 +16,7 @@
         {
             <tr>
                 <th scope="row">@hamster.Id</th>
-                <td>@hamster.Name</td>
+                <td>@hamster.</td>
                 @if (staticsType == "Wins")
                 {
                     <td class="table-active" style="background-color:#f9208c;">@hamster.Wins</td>
@@ -49,6 +50,6 @@
     [Parameter]
     public IEnumerable<Hamster>? hamsters { get; set; }
     [Parameter]
-    public string staticsType { get; set; }
+    public string? staticsType { get; set; }
 
 }

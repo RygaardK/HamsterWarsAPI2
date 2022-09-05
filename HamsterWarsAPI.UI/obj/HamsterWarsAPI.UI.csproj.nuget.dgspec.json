@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\SharedHelpers.csproj": {
+                "projectPath": "C:\\Users\\Kristoffer\\source\\repos\\HamsterWarsAPI\\SharedHelpers\\SharedHelpers.csproj"
               }
             }
           }

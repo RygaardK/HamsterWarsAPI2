@@ -1,5 +1,6 @@
 ﻿@using SharedHelpers.DataTransferObjects
 @inject IRequestService _irs
+@inject NavigationManager _nav
 
 
 
@@ -20,7 +21,7 @@
     [Parameter]
     public Hamster? opponent { get; set; }
 
-[Parameter]
+    [Parameter]
     public EventCallback<bool> battleDone{ get; set; }
     [Parameter]
     public EventCallback<Hamster> HamsterWinner{ get; set; }
@@ -30,9 +31,9 @@
         await _irs.VotedHamsterAsync(Winner.Id, Winner, "winner");
         await _irs.VotedHamsterAsync(Loser.Id, Loser, "loser");
         await _irs.CreateMatchAsync(Winner.Id, Loser.Id);
-
+        _nav.NavigateTo(_nav.Uri, forceLoad: true);
        
         await battleDone.InvokeAsync();
         await HamsterWinner.InvokeAsync(Winner);
-    }}
+    }
 }

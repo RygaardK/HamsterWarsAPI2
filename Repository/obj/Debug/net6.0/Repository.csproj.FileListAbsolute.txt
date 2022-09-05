@@ -17,3 +17,5 @@ C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Repository\obj\Debug\net6.0\Repo
 C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Repository\obj\Debug\net6.0\ref\Repository.dll
 C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Repository\bin\Debug\net6.0\Contracts.dll
 C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Repository\bin\Debug\net6.0\Contracts.pdb
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Repository\bin\Debug\net6.0\SharedHelpers.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\Repository\bin\Debug\net6.0\SharedHelpers.pdb

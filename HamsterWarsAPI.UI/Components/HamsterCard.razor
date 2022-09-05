@@ -33,11 +33,6 @@
     {
         DeleteDialogOpen = true;
         await _irs.RemoveObjectAsync<Hamster>("hamster", hamster.Id);
-    }
-    private void OnDeleteDialogClose(bool accepted)
-    {
-        DeleteDialogOpen = false;
         _nav.NavigateTo(_nav.Uri, forceLoad: true);
     }
-
 }

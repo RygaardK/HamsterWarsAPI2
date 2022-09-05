@@ -11,7 +11,8 @@
           "Contracts": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
-          "Microsoft.EntityFrameworkCore.Tools": "6.0.8"
+          "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
+          "SharedHelpers": "1.0.0"
         },
         "runtime": {
           "Repository.dll": {}
@@ -196,7 +197,8 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "Contracts/1.0.0": {
         "dependencies": {
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "SharedHelpers": "1.0.0"
         },
         "runtime": {
           "Contracts.dll": {}
@@ -205,6 +207,14 @@
       "Entities/1.0.0": {
         "runtime": {
           "Entities.dll": {}
+        }
+      },
+      "SharedHelpers/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "runtime": {
+          "SharedHelpers.dll": {}
         }
       }
     }
@@ -354,6 +364,11 @@
       "sha512": ""
     },
     "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharedHelpers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

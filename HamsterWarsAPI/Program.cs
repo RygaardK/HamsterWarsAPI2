@@ -1,8 +1,7 @@
-using HamsterWarsAPI.ActionFilter;
+using HamsterWarsAPI.Presentation;
 using HamsterWarsAPI.Extensions;
 using LoggerService;
 using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.AspNetCore.Mvc.Filters;
 using NLog;
 
 var builder = WebApplication.CreateBuilder(args);

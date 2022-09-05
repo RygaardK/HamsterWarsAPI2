@@ -7,5 +7,17 @@ using System.Threading.Tasks;
 
 namespace SharedHelpers.DataTransferObjects
 {
-    public record HamsterDto(int Id, string Name,int Age, string FavFood, string Loves, string ImgName, int Wins, int Defeats, int Games);
+    public record HamsterDto(
+        [Required(ErrorMessage = "Needs a hamsterID")]
+        int Id,
+        [Required(ErrorMessage = "Needs a Name")]
+        string Name,
+        [Required(ErrorMessage = "Needs a age")]
+        int Age, 
+        string FavFood, 
+        string Loves, 
+        string ImgName, 
+        int Wins, 
+        int Defeats, 
+        int Games);
 }

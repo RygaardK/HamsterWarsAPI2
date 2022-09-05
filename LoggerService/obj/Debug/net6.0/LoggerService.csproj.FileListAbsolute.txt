@@ -15,3 +15,5 @@ C:\Users\Kristoffer\source\repos\HamsterWarsAPI\LoggerService\obj\Debug\net6.0\L
 C:\Users\Kristoffer\source\repos\HamsterWarsAPI\LoggerService\obj\Debug\net6.0\ref\LoggerService.dll
 C:\Users\Kristoffer\source\repos\HamsterWarsAPI\LoggerService\bin\Debug\net6.0\Entities.dll
 C:\Users\Kristoffer\source\repos\HamsterWarsAPI\LoggerService\bin\Debug\net6.0\Entities.pdb
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\LoggerService\bin\Debug\net6.0\SharedHelpers.dll
+C:\Users\Kristoffer\source\repos\HamsterWarsAPI\LoggerService\bin\Debug\net6.0\SharedHelpers.pdb

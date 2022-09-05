@@ -55,11 +55,11 @@ else
     {
         int topNum = Int32.Parse(topX);
         
-        topWins = allHamsters.OrderByDescending(h => h.Wins >= 1).Take(topNum).ToList();
+        topWins = allHamsters.OrderByDescending(h => h.Wins >= 0).Take(topNum).ToList();
         
-        topLosses = allHamsters.OrderByDescending(h => h.Defeats >= 1).Take(topNum).ToList();
+        topLosses = allHamsters.OrderByDescending(h => h.Defeats >= 0).Take(topNum).ToList();
         
-        topGames = allHamsters.OrderByDescending(h => h.Games >= 1).Take(topNum).ToList();
+        topGames = allHamsters.OrderByDescending(h => h.Games >= 0).Take(topNum).ToList();
 
     }
 

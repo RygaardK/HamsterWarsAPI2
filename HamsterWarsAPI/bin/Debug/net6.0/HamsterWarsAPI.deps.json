@@ -990,7 +990,8 @@
       },
       "Contracts/1.0.0": {
         "dependencies": {
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "SharedHelpers": "1.0.0"
         },
         "runtime": {
           "Contracts.dll": {}
@@ -1023,7 +1024,8 @@
         "dependencies": {
           "Contracts": "1.0.0",
           "Entities": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "6.0.8"
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "SharedHelpers": "1.0.0"
         },
         "runtime": {
           "Repository.dll": {}
