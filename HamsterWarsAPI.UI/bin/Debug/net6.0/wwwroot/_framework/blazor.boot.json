@@ -203,7 +203,7 @@
       "Service.Contracts.dll": "sha256-dl0yrBQFGKkFRBZyux2wF6\/+whnslQ9H3gekWEnFlJI=",
       "Service.dll": "sha256-gMqczPOMeMa3KyNYBEwknoBh3InMvxs+wasJp+Umxbk=",
       "SharedHelpers.dll": "sha256-W87ScUrxgJYLBKxwcLZM7N\/dxIH3m65nnr4gpa44y5w=",
-      "HamsterWarsAPI.UI.dll": "sha256-+8esT7p7DKtO0nZwjr4VZLGNmaZZMgMx6HsEIv9t8Qg="
+      "HamsterWarsAPI.UI.dll": "sha256-8HQSDnCWp\/yaohvczE4ropuZMrwKSY6pO9dT8Zs76PQ="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -214,7 +214,7 @@
       "SharedHelpers.pdb": "sha256-EuWUaeZQCOQQ7qWui9uobR+kUhhluEOIGrsuzXET7ek=",
       "Contracts.pdb": "sha256-i\/dTAJBYKvjcW5hM9RsBT2XnrSs\/D8syuLaA7yz+SF4=",
       "Service.Contracts.pdb": "sha256-t42Vv5JpR4HQBzEc0kTf+MR1bCaqxMZ7Fn58+jPwrQk=",
-      "HamsterWarsAPI.UI.pdb": "sha256-JekH9lmviHMPSkSh9iuqNm9UGyVCeMLCV2leqXc4qvI="
+      "HamsterWarsAPI.UI.pdb": "sha256-gazIRsv\/wQ9brZthomn\/vN16VdsOLMCiC+4CAssYIH8="
     },
     "runtime": {
       "dotnet.6.0.6.kt9ssu9jjt.js": "sha256-zJXgw\/tAzTVOXksPhtpZVT12vxHC7S9mQyBRM36dwD0=",

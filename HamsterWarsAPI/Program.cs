@@ -18,7 +18,7 @@ builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddMvc();
-builder.Services.AddControllers().AddApplicationPart(typeof(HamsterWarsAPI.Presentation.AssemblyReference).Assembly);
+builder.Services.AddControllers().AddApplicationPart(typeof(AssemblyReference).Assembly);
 builder.Services.AddScoped<AsyncActionFilter>();
 
 var app = builder.Build();

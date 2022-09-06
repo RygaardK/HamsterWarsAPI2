@@ -1,8 +1,8 @@
-﻿@inject IRequestService _irs
-
+﻿@using HamsterWarsAPI.UI.Components
+@using SharedHelpers.DataTransferObjects
+@inject IRequestService _irs
 
 @page "/stats"
-@using SharedHelpers.DataTransferObjects
 
 <h3 class="text-center">TOP @topPickQuantity PLAYERS!</h3>
 
@@ -40,7 +40,6 @@ else
 
 @code
 {
-
     private IEnumerable<Hamster>? allHamsters;
     private List<Hamster>? topWins;
     private List<Hamster>? topLosses;
@@ -54,15 +53,10 @@ else
     public void GetStats(string topX)  //Generic select top from hamsters
     {
         int topNum = Int32.Parse(topX);
-        
         topWins = allHamsters.OrderByDescending(h => h.Wins >= 0).Take(topNum).ToList();
-        
         topLosses = allHamsters.OrderByDescending(h => h.Defeats >= 0).Take(topNum).ToList();
-        
         topGames = allHamsters.OrderByDescending(h => h.Games >= 0).Take(topNum).ToList();
-
     }
-
     // SETTINGS
     // TOP pick (INT), Order By (String)
     private string topPickQuantity { get; set; } = "5";
