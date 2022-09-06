@@ -198,23 +198,23 @@
       "mscorlib.dll": "sha256-zNVxhWqav+Wvwc8mjOqsl40bhVLw78MhgITrphqoROc=",
       "netstandard.dll": "sha256-yQ7oiuGXRX47V21EibXbfTPXOkJGOgCJhW9YF6e4hw0=",
       "System.Private.CoreLib.dll": "sha256-Ug2\/rd8Ck7Dls6uaZNmrqc7EvE8f41iX96qdX57LStQ=",
-      "Contracts.dll": "sha256-XG3nPxzibEZ01eJEVmYoSQ+zK2gsfPzZnefbBEBnCBw=",
+      "Contracts.dll": "sha256-VTYoVM0KapwTqGl3CxSgE7MK36IFP+N146w0WH9Jb3Q=",
       "Entities.dll": "sha256-M2+tlg1BJipoYKt5+miusiPZGP8YtoTDbO32cEw2UIU=",
-      "Service.Contracts.dll": "sha256-dl0yrBQFGKkFRBZyux2wF6\/+whnslQ9H3gekWEnFlJI=",
-      "Service.dll": "sha256-gMqczPOMeMa3KyNYBEwknoBh3InMvxs+wasJp+Umxbk=",
-      "SharedHelpers.dll": "sha256-W87ScUrxgJYLBKxwcLZM7N\/dxIH3m65nnr4gpa44y5w=",
-      "HamsterWarsAPI.UI.dll": "sha256-8HQSDnCWp\/yaohvczE4ropuZMrwKSY6pO9dT8Zs76PQ="
+      "Service.Contracts.dll": "sha256-Y0NSWGB5f847w2Xh\/WNzX8MrdL\/mjDMOG\/w\/gIU\/XA0=",
+      "Service.dll": "sha256-vgj19fdhuEHuVyEUUnI03pj+yz3WKvqf3C\/fsGwxOC8=",
+      "SharedHelpers.dll": "sha256-HnVd2C09IB\/7Zj9T9kF\/5yqvLGNIeYiiOdyiqvPF4+g=",
+      "HamsterWarsAPI.UI.dll": "sha256-3YhVd5WvCAD2m8jUypEP1bb5jAHoJZuXZ3PfTyUbvdQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Entities.pdb": "sha256-5MBb5BuFp7Z7Y9sESF24+BQeJztj7n6HrKQShS7wc0k=",
-      "Service.pdb": "sha256-NL2JyDcDK9FdSFSurx0dLrYXLhoShwfPSjl1FFtOV8Y=",
-      "SharedHelpers.pdb": "sha256-EuWUaeZQCOQQ7qWui9uobR+kUhhluEOIGrsuzXET7ek=",
-      "Contracts.pdb": "sha256-i\/dTAJBYKvjcW5hM9RsBT2XnrSs\/D8syuLaA7yz+SF4=",
-      "Service.Contracts.pdb": "sha256-t42Vv5JpR4HQBzEc0kTf+MR1bCaqxMZ7Fn58+jPwrQk=",
-      "HamsterWarsAPI.UI.pdb": "sha256-gazIRsv\/wQ9brZthomn\/vN16VdsOLMCiC+4CAssYIH8="
+      "Service.pdb": "sha256-cRl3VyBdfuxYvcUcwlRJqysuZNMV3InctlRMPAE1V8c=",
+      "SharedHelpers.pdb": "sha256-NXeUOyExRpbvL4ol5rP7Fl8u1\/w96Zf5P7gKWc9ts1E=",
+      "Contracts.pdb": "sha256-27hDaK7Kof\/vDdBZC743tDQWcsqwrwQ\/ZvE0QUjy58w=",
+      "Service.Contracts.pdb": "sha256-dbkw8TEw+FnPNg93VEOO2dOuV+xk1e2fLT08VUsIy1w=",
+      "HamsterWarsAPI.UI.pdb": "sha256-pVfCF2nBnYe0BEb7gO0x7IfoI7aCDwSmOw0pZ\/eAPXY="
     },
     "runtime": {
       "dotnet.6.0.6.kt9ssu9jjt.js": "sha256-zJXgw\/tAzTVOXksPhtpZVT12vxHC7S9mQyBRM36dwD0=",

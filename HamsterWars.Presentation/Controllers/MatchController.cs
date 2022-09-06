@@ -19,7 +19,7 @@ namespace HamsterWars.Presentation.Controllers
             return Ok(matches);
 
         }
-        [HttpGet("/matchHamsters", Name = "GetMatchHistoryAsync")]
+        [HttpGet("matchHamsters", Name = "GetMatchHistoryAsync")]
         public async Task<IActionResult> GetMatchHistoryAsync()
         {
             var matches = await _service.MatchesService.GetMatchHistoryAsync(trackChanges: false);

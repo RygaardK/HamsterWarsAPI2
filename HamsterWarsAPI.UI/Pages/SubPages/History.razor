@@ -1,9 +1,6 @@
-﻿@using AutoMapper
-@using SharedHelpers.DataTransferObjects
-
+﻿@using SharedHelpers.DataTransferObjects
 @inject NavigationManager _nav
 @inject IRequestService _irs
-@inject IMapper _mapper
 
 @page "/history"
 
@@ -74,7 +71,6 @@ else
 
     public async Task RemoveObjAsync(MatchHistoryDto matchHistoryDto)
     {
-        var match = _mapper.Map<IEnumerable<MatchHistoryDto>>(matchHistoryDto);
         await _irs.RemoveObjectAsync<Match>("match", matchHistoryDto.Id);
         _nav.NavigateTo(_nav.Uri, forceLoad: true);
     }

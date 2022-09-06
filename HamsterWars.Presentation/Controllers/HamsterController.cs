@@ -26,11 +26,11 @@ namespace HamsterWars.Presentation.Controllers
             return Ok(hamster);
         }
         [HttpPost]
-        //[ServiceFilter(typeof(AsyncActionFilter))]
+        [ServiceFilter(typeof(AsyncActionFilter))]
         public async Task<IActionResult> CreateHamsterAsync([FromBody] HamsterForCreationDto hamster)
         {
             var createdHamster = await _service.HamsterService.CreateHamsterAsync(hamster);
-            return CreatedAtRoute("Hamster", new { id = createdHamster.Id }, createdHamster);
+            return CreatedAtRoute("HamsterById", new { id = createdHamster.Id }, createdHamster);
         }
 
         [HttpDelete("delete/{id:int}")]
